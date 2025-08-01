@@ -1,0 +1,12 @@
+<div class="todo-list">
+  <h2>Your Tasks</h2>
+  <div *ngIf="todos.length === 0" class="no-todos">
+    No tasks yet. Add one above!
+  </div>
+  <ul *ngIf="todos.length > 0" class="todo-items">
+    <li *ngFor="let todo of todos" class="todo-item">
+      <span class="todo-text">{{ todo.title }}</span>
+      <app-delete-todo [todoId]="todo.id" (deleted)="onTodoDeleted()"></app-delete-todo>
+    </li>
+  </ul>
+</div>

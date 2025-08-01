@@ -1,0 +1,37 @@
+.todo-list {
+  margin: 20px 0;
+}
+
+.no-todos {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  padding: 20px;
+}
+
+.todo-items {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 10px 0;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-text {
+  font-weight: bold;
+  color: #333;
+}
+
+.todo-description {
+  color: #666;
+  font-size: 0.9em;
+  margin-left: 10px;
+}

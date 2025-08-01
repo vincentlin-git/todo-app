@@ -1,0 +1,16 @@
+<div class="add-todo">
+  <h2>Add New Task</h2>
+  <form (ngSubmit)="addTodo()" class="todo-form">
+    <input
+      type="text"
+      [(ngModel)]="newTodo"
+      name="newTodo"
+      placeholder="Enter a new task..."
+      class="todo-input"
+      required
+    >
+    <button type="submit" [disabled]="!newTodo.trim()" class="add-button">
+      Add Task
+    </button>
+  </form>
+</div>
