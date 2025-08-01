@@ -79,5 +79,39 @@ todo-app
 
 ## Testing
 
-- Unit tests should be written for both Angular components and .NET services.
-- Use testing frameworks like Jasmine/Karma for Angular and xUnit for .NET.
+### Backend Testing (.NET with NUnit)
+The backend includes comprehensive unit tests using NUnit framework:
+
+```bash
+cd dotnet-backend.Tests
+dotnet test
+```
+
+**Test Coverage:**
+- TodoService: 11 tests covering CRUD operations and edge cases
+- TodoController: 12 tests covering API endpoints and HTTP responses
+- Total: 23 passing tests
+
+### Frontend Testing (Angular with Jasmine/Karma)
+The frontend includes comprehensive unit tests using Jasmine and Karma:
+
+```bash
+cd angular-frontend
+npm test
+```
+
+**Test Coverage:**
+- TodoService: 12 tests covering HTTP operations and error handling
+- Components: 32 tests covering all component functionality
+- Total: 44 passing tests
+
+### Running All Tests
+To run both backend and frontend tests:
+
+```bash
+# Backend tests
+cd dotnet-backend.Tests && dotnet test
+
+# Frontend tests  
+cd angular-frontend && npm test -- --watch=false --browsers=ChromeHeadless
+```
