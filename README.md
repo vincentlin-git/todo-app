@@ -88,9 +88,8 @@ dotnet test
 ```
 
 **Test Coverage:**
-- TodoService: 11 tests covering CRUD operations and edge cases
-- TodoController: 12 tests covering API endpoints and HTTP responses
-- Total: 23 passing tests
+- TodoService: covering CRUD operations and edge cases
+- TodoController: covering API endpoints and HTTP responses
 
 ### Frontend Testing (Angular with Jasmine/Karma)
 The frontend includes comprehensive unit tests using Jasmine and Karma:
@@ -101,9 +100,8 @@ npm test
 ```
 
 **Test Coverage:**
-- TodoService: 12 tests covering HTTP operations and error handling
-- Components: 32 tests covering all component functionality
-- Total: 44 passing tests
+- TodoService: covering HTTP operations and error handling
+- Components: covering all component functionality
 
 ### Running All Tests
 To run both backend and frontend tests:
